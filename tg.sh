@@ -24,13 +24,13 @@ fi
 #validating groups
 # function for validate names of groups and define each for curl command
 sendMessage() {
-if [[ "$GROUP" == *"${testGroup[1]}"* ]] ;then
-  chatId=${testGroup[0]}
-elif [[ "$GROUP" == *"${indraGroup[1]}"* ]] ;then
-  chatId=${indraGroup[0]}
-else
-  chatId=${ansibleGroup[0]}
-fi
+  if [[ "$GROUP" == *"${testGroup[1]}"* ]] ;then
+    chatId=${testGroup[0]}
+  elif [[ "$GROUP" == *"${indraGroup[1]}"* ]] ;then
+    chatId=${indraGroup[0]}
+  else
+    chatId=${ansibleGroup[0]}
+  fi
 curl -s -X POST "${URL}${botToken}/sendMessage" -d "chat_id=${chatId}&text=${MSG}" > /dev/null
 }
 
