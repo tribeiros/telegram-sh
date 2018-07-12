@@ -3,7 +3,7 @@
 #tribeiros@indracompany.com
 
 # with query above, we get every data for variables
-#https://api.telegram.org/bot<botToken>/getUpdates
+# https://api.telegram.org/bot<botToken>/getUpdates
 
 #Variables 
 URL=https://api.telegram.org/ #telegram uri
