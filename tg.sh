@@ -31,7 +31,7 @@ sendMessage() {
   else
     chatId=${ansibleGroup[0]}
   fi
-curl -s -X POST "${URL}${botToken}/sendMessage" -d "chat_id=${chatId}&text=${MSG}" > /dev/null
+  curl -s -X POST "${URL}${botToken}/sendMessage" -d "chat_id=${chatId}&text=${MSG}" > /dev/null
 }
 
 #execute function
