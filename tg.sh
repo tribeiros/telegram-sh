@@ -7,7 +7,7 @@
 
 #Variables 
 URL=https://api.telegram.org/ #telegram uri
-botToken=bot646348371:AAFkySfvz9zpLD52mmserFlhB2IJ-N_S1Cg #xtgxbot made with botfather
+botToken=bot646348371:AAFkySfvz9zpLD52mmserFlhB2IJ-N_S1Cg #tgbash_bot made with botfather
 ansibleGroup=(-272973710 ansible) #array with chat_id and name
 indraGroup=(-242284498 indra) #array with chat_id and name
 testGroup=(-220750192 test) #array with chat_id and name
